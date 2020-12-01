@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large}{}
+{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{
+  {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & #2 \\
+  \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubheadingThree}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        {\textbf{#1} {#2}}
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Resume begins here
+\begin{document}
+
+% Header
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Beau Grimmel}} & Email : \href{mailto:beaugrimmel@gmail.com}{beaugrimmel@gmail.com}\\
+  \href{}{} & linkedin.com/in/beau-grimmel \\
+\end{tabular*}
+
+% Education
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Massachusetts}{Amherst, MA}
+            {Bachelor of Science in Mathematics;  GPA: 3.77}{}
+        \resumeSubheadingTwo
+            {Boston Latin School}{Boston, MA}
+     \resumeSubHeadingListEnd
+ 
+ % Actuarial Exams
+\section{Actuarial Exams}
+\vspace{-14pt}
+    \begin{multicols}{3}
+      \begin{itemize}[leftmargin=*]
+    	\item Probability
+    	\item Financial Math
+ 	\item Investment and Financial Markets
+	\item Statistics for Risk Modeling
+   	\item Predictive Analytics
+	\item Short-Term Actuarial Math
+     	\item Long-Term Actuarial Math \tiny{(Spring 2020 Sitting)}
+	
+  \end{itemize}
+\end{multicols}
+    
+% Technical Skills
+\section{Technical Skills}
+    \resumeSubHeadingListStart
+        \resumeSubheadingThree{Programing}{R, Python, Java, C, SQL, GGY Axis}
+        \resumeSubheadingThree{Developer Tools}{Git, Unix, API, Jupyter, Anaconda, RStudio}
+        \resumeSubheadingThree{Libraries}{pandas, matplotlib, numpy, sklearn, beautifulsoup, selenium, json, ggplot2, dyplr, tidyr, caret}
+    \resumeSubHeadingListEnd
+
+% Experience
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+        \resumeSubheading
+            {Assistant Actuarial Analyst}{Wellesley, MA}
+            {Sun Life Financial}{July 2019 - Present}
+            \resumeItemListStart
+                \resumeItem{Current Position}
+            \resumeItemListEnd
+            
+   	\resumeSubheading
+    	    {Actuarial Intern}{Wellesley, MA}
+            {Sun Life Financial}{June 2018 - August 2018}
+            \resumeItemListStart 
+            	\resumeItem{Built automated reports analyzing policyholder terminations.}
+                	\resumeItem{Assisted on lapse experience study.}
+            \resumeItemListEnd
+            
+    	\resumeSubheading
+    	    {Analytics Intern}{Boston, MA}
+            {Digital Lumens}{December 2017 - January 2018}
+            \resumeItemListStart
+          	\resumeItem{Built and managed parts database.}
+    	   	\resumeItem{Implemented various models projecting part usage and build costs.}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {Bus Operator}{Amherst, MA}
+            {UMass Transit Services}{September 2016 - May 2019}
+            \resumeItemListStart
+            	\resumeItem{Maintained Class B Commercial Driver's License.}
+		\resumeItem{Recorded over 1,000 hours of operating time}
+       	    \resumeItemListEnd
+    	
+    	\resumeSubheading
+            {Head Sailing Instructor}{Boston, MA}
+            {Courageous Sailing}{June 2013 - August 2017}
+            \resumeItemListStart
+            	\resumeItem{Created curriculum and led on the water drills for intermediate sailors.}
+		\resumeItem{Met with instructors to review performance and set goals.}
+		\resumeItem{Organized and budgeted overnight camping trips to Boston Harbor Islands.}
+            \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
